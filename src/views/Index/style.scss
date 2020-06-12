@@ -1,0 +1,25 @@
+#background {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(160deg, #0c1527, 	#1f3560, #32559a, 	#5279c7, #7897d3);
+    display: grid;
+    justify-content: stretch;
+
+    div.header {
+        justify-self: center;
+        img {
+            margin-top: 100px;
+            width: 100px;
+            height: 100px;
+        }
+        
+        h1 {
+            color: #fff;
+            font-weight: bolder;
+        }
+    }   
+
+    div.container {
+        justify-self: stretch;
+    }
+}
