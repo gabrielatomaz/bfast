@@ -1,16 +1,12 @@
 import React, { Component } from "react"
 import './style.scss'
-import { Button } from '../../components/index'
-import logo from '../../assets/logo.svg'
+import { Button, Logo } from '../../components/index'
 
 class Index extends Component {
     render() {
         return (
             <div id="background">
-                <div class="header">
-                    <img src={logo} alt="BFast" />
-                    <h1>BFast</h1>
-                </div>
+                <Logo />
                 <div class="container">
                     <div>
                         <Button text="Sign Up" path="/register" />
