@@ -29,9 +29,9 @@ class Registration extends Component {
                 return (
                     <section>
                         <label>Email</label>
-                        <Input type="email" placeholder="fulano.tal@email.com"/>
+                        <Input type="email" placeholder="john.doe@email.com"/>
                         <label>Confirm Email</label>
-                        <Input type="email" placeholder="fulano.tal@email.com" />
+                        <Input type="email" placeholder="john.doe@email.com" />
                     </section>
                 )
             case 2:
@@ -47,9 +47,9 @@ class Registration extends Component {
                 return (
                     <section>
                         <label>Name</label>
-                        <Input type="text" placeholder="Fulano de Tal" />
+                        <Input type="text" placeholder="John Doe" />
                         <label>Username</label>
-                        <Input type="text" placeholder="FulanoDeTal" />
+                        <Input type="text" placeholder="JohnDoe" />
                     </section>
                 )
         }

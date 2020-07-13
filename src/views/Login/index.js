@@ -13,7 +13,7 @@ class Login extends Component {
                 <form>
                 <section>
                         <label>Username</label>
-                        <Input type="text" placeholder="FulanoDeTal" />
+                        <Input type="text" placeholder="JohnDoe" />
                         <label>Password</label>
                         <Input type="password" placeholder="*****" />
                     </section>

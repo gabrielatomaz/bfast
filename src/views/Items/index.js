@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './style.scss'
 import { connect } from 'react-redux'
 import { fetchItems } from '../../store/itemsReducer/actions'
-
+import { Menu } from '../../components/'
 class Items extends Component {
     componentDidMount = async () => {
         await this.props.fetchItems();
@@ -13,7 +13,9 @@ class Items extends Component {
 
         return (
             <div>
+                ???
                 {items.map(item => <div>{item.title}</div>)}
+                <Menu />
             </div>
         )
     }

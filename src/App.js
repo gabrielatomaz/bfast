@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 import configureStore from './store'
 import './style.scss'
 import { Index, Items, Login, Registration } from './views/index'
+import { Menu } from './components'
 
 class App extends Component {
   render() {
