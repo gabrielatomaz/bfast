@@ -77,6 +77,7 @@ class Registration extends Component {
                         <Button 
                             text={activeStep === 2 ? 'Finish' : 'Next'}
                             click={this.handleNext} 
+                            type="button"
                             path={activeStep === 2 ? 'items' : ''}
                         />
                         <Button 
@@ -84,6 +85,7 @@ class Registration extends Component {
                             color="grey"
                             click={this.handleBack}
                             disabled={activeStep === 0}
+                            type="button"
                         />
                     </footer>
                 </form>
