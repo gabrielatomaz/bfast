@@ -2,10 +2,9 @@ import React from "react"
 import { Link } from "react-router-dom";
 import '../../../node_modules/font-awesome/css/font-awesome.min.css'
 import './style.scss'
-
-const Button = ({ text, icon, path, click = () => {} }) => {
+const Button = ({ text, icon, path, color, disabled, click = () => {} }) => {
     const button = (
-        <button onClick={click}>
+        <button className={color} onClick={click} disabled={disabled}>
             { (icon ? <i className={icon}></i> : '') } { text }
         </button>
     )

@@ -7,7 +7,7 @@ class Index extends Component {
         return (
             <div id="background">
                 <Logo />
-                <div class="container">
+                <div className="container">
                     <div>
                         <Button text="Sign Up" path="/register" />
                     </div>
