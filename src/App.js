@@ -1,26 +1,29 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import React, { Component } from 'react'
 import { Provider } from 'react-redux'
+import PropTypes from "prop-types"
+import { withRouter } from "react-router"
 import configureStore from './store'
+import Routes from './routes'
+import { Menu } from './components/index'
 import './style.scss'
-import { Index, Items, Login, Registration } from './views/index'
-import { Menu } from './components'
 
 class App extends Component {
+  static propTypes = {
+    location: PropTypes.object.isRequired
+  };
+
   render() {
+    const { location: { pathname }} = this.props
+
+    console.log(pathname)
+    
     return (
       <Provider store={configureStore()}>
-        <BrowserRouter>
-            <Switch>
-              <Route exact path="/" component={Index} />
-              <Route path="/items" component={Items} />
-              <Route path="/login" component={Login} />
-              <Route path="/register" component={Registration} />
-            </Switch>
-        </BrowserRouter>
+        { pathname !== '/register' && pathname !== '/login' && pathname !== '/' &&  <Menu /> }
+        <Routes />
       </Provider>
     )
   }
 }
 
-export default App;
+export default withRouter(App)
