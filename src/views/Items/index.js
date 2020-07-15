@@ -14,8 +14,13 @@ class Items extends Component {
         return (
             <div className="container-items">
                 <Title text="Your items" padding="p-lg" />
-                {items.map(({ key, title }) => 
-                    <Card key={key} title={title} />
+                {items.map(({ key, title, date, daysWithMe }) => 
+                    <Card 
+                        key={key}
+                        title={title} 
+                        date={date} 
+                        daysWithMe={daysWithMe}
+                    />
                 )}
             </div>
         )

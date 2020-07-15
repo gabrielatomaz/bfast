@@ -9,14 +9,14 @@ class Profile extends Component {
                 <Title text="Update your profile" padding="p-lg" />
                 <form>
                     <label>Full name</label>
-                    <Input type="text" value="John Doe" />
+                    <Input type="text" defaultValue="John Doe" />
                     <label>Email</label>
-                    <Input type="email" value="john.doe@email.com" />
+                    <Input type="email" defaultValue="john.doe@email.com" />
                     
                     <label>Password</label>
-                    <Input type="password" value="password" />
+                    <Input type="password" defaultValue="password" />
                     <label>Confirm password</label>
-                    <Input type="password" value="password" />
+                    <Input type="password" defaultValue="password" />
                     <Button type="button" text="Update" />
                 </form>
             </div>

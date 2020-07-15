@@ -4,6 +4,7 @@ import Logo from './Logo/index'
 import Menu from './Menu/index'
 import Title from './Title/index'
 import Card from './Card/index'
+import Badge from './Badge/index'
 
 export { 
     Input,
@@ -12,4 +13,5 @@ export {
     Menu,
     Title,
     Card,
+    Badge,
 }

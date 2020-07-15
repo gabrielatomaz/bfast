@@ -1,9 +1,17 @@
 import React from "react"
 import './style.scss'
 
-const Input = ({ type, placeholder, value, name }) => {
+const Input = ({ type, placeholder, value, defaultValue, name }) => {
     return (
-        <input type={type} name={name} value={value} placeholder={placeholder} className="c-input"></input> 
+        <input 
+            type={type}
+            name={name} 
+            value={value} 
+            placeholder={placeholder} 
+            defaultValue={defaultValue}
+            className="c-input"
+        >
+        </input> 
     )
 }
 

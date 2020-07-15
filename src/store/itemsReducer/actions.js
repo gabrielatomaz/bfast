@@ -4,22 +4,26 @@ export const fetchItems = () => dispatch => {
     const mock = [
         {
             title: 'teste',
-            data: '17/01/2000',
+            date: '25 Sep, 2020',
+            daysWithMe: '22',
             key: 1,
         },
         {
             title: 'teste',
-            data: '17/01/2000', 
+            date: '25 Sep, 2020',
+            daysWithMe: '22',
             key: 2,
         },
         {
             title: 'teste',
-            data: '17/01/2000', 
+            date: '25 Sep, 2020', 
+            daysWithMe: '22',
             key: 3,
         },
         {
             title: 'teste',
-            data: '17/01/2000',
+            date: '25 Sep, 2020',
+            daysWithMe: '22',
             key: 4, 
         },
     ]

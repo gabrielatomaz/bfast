@@ -22,9 +22,32 @@ div.card-body {
         grid-column: col 2 /span 3;
         text-align: start !important;
 
-        img {
-            width: 18px;
-            margin-left: 25px;
+        #returnItem {
+            width: 20px;
+            float: right;
+            margin-right: 5%;
+        }
+        
+        div.infos {
+            text-align: start !important;
+            img {
+                width: 18px;
+                margin-left: 25px;
+            }
+
+            span {
+                vertical-align: 2.5px;
+                margin-left: 10px;
+                display:inline-block;
+                color: #444444;
+            }
+
+            p{
+                margin-left: 25px;
+                margin-top: 3px;
+                font-size: 12px;
+                color: #626262;
+            }
         }
     }
 
