@@ -1,14 +1,12 @@
 import React from "react"
+import { SVG } from '../../assets'
 import './style.scss'
 
-import whiteLogo from '../../assets/logo-white.svg'
-import blueLogo from '../../assets/logo-blue.svg'
-
-
 const Logo = ({ color }) => {
+    const { BlueLogo, WhiteLogo } = SVG
     return (
         <div>
-            <img className="logo" src={color === 'blue' ?  blueLogo : whiteLogo} alt="BFast" />
+            <img className="logo" src={color === 'blue' ?  BlueLogo : WhiteLogo} alt="BFast" />
             <h1 className={color} >BFast</h1>
         </div>
     )

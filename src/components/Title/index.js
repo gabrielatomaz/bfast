@@ -1,11 +1,9 @@
 import React from "react"
 import './style.scss'
 
-const Title = ({ text }) => {
+const Title = ({ text, size, padding }) => {
     return (
-        <div>
-            <h1 className="title">{text}</h1>
-        </div>
+        <h1 className={`title ${size} ${padding}`}>{text}</h1>
     )
 }
 

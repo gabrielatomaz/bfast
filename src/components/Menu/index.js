@@ -1,19 +1,18 @@
 import React from "react"
 import './style.scss'
 
-import listSolid from '../../assets/list-solid.svg'
-import userSolid from '../../assets/user-solid.svg'
-import plusCircleSolid from '../../assets/plus-circle-solid.svg'
+import { SVG } from '../../assets'
 
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
  
 const Menu = () => {
+    const { PlusCircleSolid, ListSolid, UserSolid } = SVG
     const items = [
-        { src: listSolid, alt: 'List Items', path: '/items' },
-        { src: plusCircleSolid, alt: 'Collect Item', path: '/loan' },
-        { src: userSolid, alt: 'Profile', path: '/profile' },
-    ];
+        { src: ListSolid, alt: 'List Items', path: '/items' },
+        { src: PlusCircleSolid, alt: 'Collect Item', path: '/loan' },
+        { src: UserSolid, alt: 'Profile', path: '/profile' },
+    ]
 
     return (
         <div className="container-menu">

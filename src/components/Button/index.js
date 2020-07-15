@@ -8,7 +8,7 @@ const Button = ({ text, type, icon, path, color, disabled, click = () => {} }) =
         </button>
     )
     return (
-        <div>
+        <div className="button">
             { path ? 
                 <Link to={path}>
                     { button }

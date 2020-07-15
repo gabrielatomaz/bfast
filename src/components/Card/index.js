@@ -1,15 +1,16 @@
 import React from "react"
 import './style.scss'
-import img from '../../assets/notebook.jpg'
+import { IMG } from '../../assets'
+import { Title } from '../'
 
 const Card = ({ title }) => {
     return (
         <div className="card-body">
             <aside className="aside-img">
-                <img src={img} />
+                <img src={IMG.NotebookImg} alt=""/>
             </aside>
             <aside className="aside-infos">
-            { title }
+                <Title text={title} size="md" padding="p-md" />
             </aside>
         </div>
     )
