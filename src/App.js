@@ -14,8 +14,6 @@ class App extends Component {
 
   render() {
     const { location: { pathname }} = this.props
-
-    console.log(pathname)
     
     return (
       <Provider store={configureStore()}>
