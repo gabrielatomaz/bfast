@@ -8,7 +8,7 @@ import blueLogo from '../../assets/logo-blue.svg'
 const Logo = ({ color }) => {
     return (
         <div>
-            <img src={color ?  blueLogo : whiteLogo} alt="BFast" />
+            <img className="logo" src={color === 'blue' ?  blueLogo : whiteLogo} alt="BFast" />
             <h1 className={color} >BFast</h1>
         </div>
     )

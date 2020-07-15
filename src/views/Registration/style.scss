@@ -4,14 +4,22 @@ div {
         margin-left: 10%;
         padding: 0;
         text-align: start;
-        color: #32559a;
+        color: #29457e;
     }   
 }
 
 .MuiStepIcon-active {
-    color: #1f3560 !important;
+    color: #29457e !important;
 }
 
 .MuiStepIcon-completed {
-    color: #1f3560 !important;
+    color: #29457e !important;
+}
+
+.MuiPaper-elevation5 {
+    box-shadow: none;    
+}
+
+.MuiPaper-root {
+    background-color: #dfdede !important;
 }

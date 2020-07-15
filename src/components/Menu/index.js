@@ -1,29 +1,29 @@
 import React from "react"
-import { Link } from "react-router-dom";
+import './style.scss'
+
 import listSolid from '../../assets/list-solid.svg'
 import userSolid from '../../assets/user-solid.svg'
 import plusCircleSolid from '../../assets/plus-circle-solid.svg'
 
-import './style.scss'
+import { Link } from "react-router-dom";
 
+ 
 const Menu = () => {
+    const items = [
+        { src: listSolid, alt: 'List Items', path: '/items' },
+        { src: plusCircleSolid, alt: 'Collect Item', path: '/loan' },
+        { src: userSolid, alt: 'Profile', path: '/profile' },
+    ];
+
     return (
-        <div class="container-menu">
-            <div class="child">
-                <Link to="/items">
-                    <img src={listSolid} alt="List Items"/>
-                </Link>
-            </div>
-            <div class="child">
-                <Link to="/loan">
-                    <img src={plusCircleSolid} alt="Collect Item"/>
-                </Link>
-            </div>
-            <div class="child">
-                <Link to="/profile">
-                    <img src={userSolid} alt="Profile"/>
-                </Link>
-            </div>
+        <div className="container-menu">
+                {items.map(item => (
+                    <div key={item.path} className="child">
+                        <Link to={item.path}>
+                            <img src={item.src} className="menu" alt={item.alt}/>
+                        </Link>
+                    </div>
+                ))}
         </div>
     )
 }

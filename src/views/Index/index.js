@@ -6,13 +6,13 @@ class Index extends Component {
     render() {
         return (
             <div id="background">
-                <Logo />
+                <Logo color="white"/>
                 <div className="container">
                     <div>
-                        <Button text="Sign Up" path="/register" />
+                        <Button text="Log in" path="/login" />
                     </div>
                     <div>
-                        <Button text="Log in" path="/login" />
+                        <Button text="Sign Up" path="/register" />
                     </div>
                 </div>
             </div>
