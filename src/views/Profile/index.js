@@ -6,7 +6,7 @@ class Profile extends Component {
     render() {
         return (
             <div>
-                <Title text="Update your profile"/>
+                <Title text="Update your profile" padding="p-lg" />
                 <form>
                     <label>Full name</label>
                     <Input type="text" value="John Doe" />

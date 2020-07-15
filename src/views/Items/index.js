@@ -12,9 +12,11 @@ class Items extends Component {
         const { items } = this.props
 
         return (
-            <div class="container-items">
-                <Title text="Your items"/>
-                {items.map(item => <Card title={item.title} />)}
+            <div className="container-items">
+                <Title text="Your items" padding="p-lg" />
+                {items.map(({ key, title }) => 
+                    <Card key={key} title={title} />
+                )}
             </div>
         )
     }

@@ -26,39 +26,36 @@ class Registration extends Component {
     getContent = (activeStep) => {
         switch (activeStep) {
             case 1:
-                return (
-                    <section>
-                        <label>Email</label>
-                        <Input type="email" placeholder="john.doe@email.com"/>
-                        <label>Confirm Email</label>
-                        <Input type="email" placeholder="john.doe@email.com" />
-                    </section>
-                )
+                return {
+                    labels: ['Email', 'Confirm email'],
+                    input: {
+                        type: 'email',
+                        placeholder: 'john.doe@email.com'
+                    }
+                }
             case 2:
-                return (
-                    <section>
-                        <label>Password</label>
-                        <Input type="password" placeholder="******" />
-                        <label>Confirm password</label>
-                        <Input type="password" placeholder="******" />
-                    </section>
-                )
+                return {
+                    labels: ['Password', 'Confirm password'],
+                    input: {
+                        type: 'password',
+                        placeholder: '********'
+                    }
+                }
             default:
-                return (
-                    <section>
-                        <label>Name</label>
-                        <Input type="text" placeholder="John Doe" />
-                        <label>Username</label>
-                        <Input type="text" placeholder="JohnDoe" />
-                    </section>
-                )
+                return {
+                    labels: ['Name', 'Username'],
+                    input: {
+                        type: 'text',
+                        placeholder: 'JohnDoe'
+                    }
+                }
         }
     }
 
     render() {
         const steps = [0, 1, 2]
         let { activeStep } = this.state
-
+        const { labels, input: { type, placeholder } } = this.getContent(activeStep)
         return (
             <div>
                 <header>
@@ -72,7 +69,12 @@ class Registration extends Component {
                     </Stepper>
                 </header>
                 <form>
-                    {this.getContent(activeStep)}
+                    <section>
+                        <label> { labels[0] } </label>
+                        <Input type={type} placeholder={placeholder} />
+                        <label> { labels[1] } </label>
+                        <Input type={type} placeholder={placeholder} />
+                    </section>
                     <footer>
                         <Button 
                             text={activeStep === 2 ? 'Finish' : 'Next'}
