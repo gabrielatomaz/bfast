@@ -29,25 +29,28 @@ class Registration extends Component {
                 return {
                     labels: ['Email', 'Confirm email'],
                     input: {
+                        names: ['email', 'confirmEmail'],
                         type: 'email',
                         placeholder: 'john.doe@email.com'
-                    }
+                    },
                 }
             case 2:
                 return {
                     labels: ['Password', 'Confirm password'],
                     input: {
                         type: 'password',
-                        placeholder: '********'
-                    }
+                        placeholder: '********',
+                        names: ['password', 'confirmPassword'],
+                    },
                 }
             default:
                 return {
                     labels: ['Name', 'Username'],
                     input: {
                         type: 'text',
-                        placeholder: 'JohnDoe'
-                    }
+                        placeholder: 'JohnDoe',
+                        names: ['name', 'userName'],
+                    },
                 }
         }
     }
@@ -55,7 +58,7 @@ class Registration extends Component {
     render() {
         const steps = [0, 1, 2]
         let { activeStep } = this.state
-        const { labels, input: { type, placeholder } } = this.getContent(activeStep)
+        const { labels, input: { type, placeholder, names } } = this.getContent(activeStep)
         return (
             <div>
                 <header>
@@ -71,9 +74,9 @@ class Registration extends Component {
                 <form>
                     <section>
                         <label> { labels[0] } </label>
-                        <Input type={type} placeholder={placeholder} />
+                        <Input type={type} name={names[0]} placeholder={placeholder}/>
                         <label> { labels[1] } </label>
-                        <Input type={type} placeholder={placeholder} />
+                        <Input type={type} name={names[1]} placeholder={placeholder}/>
                     </section>
                     <footer>
                         <Button 
