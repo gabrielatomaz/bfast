@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/bfast/static/css/main.21a6b87c.chunk.css",
+    "main.js": "/bfast/static/js/main.17373869.chunk.js",
+    "main.js.map": "/bfast/static/js/main.17373869.chunk.js.map",
+    "runtime-main.js": "/bfast/static/js/runtime-main.57c5fcbb.js",
+    "runtime-main.js.map": "/bfast/static/js/runtime-main.57c5fcbb.js.map",
+    "static/js/2.ea86baa0.chunk.js": "/bfast/static/js/2.ea86baa0.chunk.js",
+    "static/js/2.ea86baa0.chunk.js.map": "/bfast/static/js/2.ea86baa0.chunk.js.map",
+    "index.html": "/bfast/index.html",
+    "precache-manifest.b05aaa2222f26d8a3a4c45e6451be2ad.js": "/bfast/precache-manifest.b05aaa2222f26d8a3a4c45e6451be2ad.js",
+    "service-worker.js": "/bfast/service-worker.js",
+    "static/css/main.21a6b87c.chunk.css.map": "/bfast/static/css/main.21a6b87c.chunk.css.map",
+    "static/js/2.ea86baa0.chunk.js.LICENSE.txt": "/bfast/static/js/2.ea86baa0.chunk.js.LICENSE.txt",
+    "static/media/calendar-plus-solid.svg": "/bfast/static/media/calendar-plus-solid.a2b456a3.svg",
+    "static/media/list-solid.svg": "/bfast/static/media/list-solid.fcf4a317.svg",
+    "static/media/logo-blue.svg": "/bfast/static/media/logo-blue.69310871.svg",
+    "static/media/logo-white.svg": "/bfast/static/media/logo-white.956d5f71.svg",
+    "static/media/notebook.jpg": "/bfast/static/media/notebook.baf369a8.jpg",
+    "static/media/plus-circle-solid.svg": "/bfast/static/media/plus-circle-solid.fc96e38b.svg",
+    "static/media/undo-alt-solid.svg": "/bfast/static/media/undo-alt-solid.bbb3271e.svg",
+    "static/media/user-solid.svg": "/bfast/static/media/user-solid.02453574.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.57c5fcbb.js",
+    "static/js/2.ea86baa0.chunk.js",
+    "static/css/main.21a6b87c.chunk.css",
+    "static/js/main.17373869.chunk.js"
+  ]
+}
