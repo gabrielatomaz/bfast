@@ -74,9 +74,9 @@ class Registration extends Component {
                 <form>
                     <section>
                         <label> { labels[0] } </label>
-                        <Input type={type} name={names[0]} placeholder={placeholder}/>
+                        <Input type={type} name={names[0]} placeholder={placeholder} />
                         <label> { labels[1] } </label>
-                        <Input type={type} name={names[1]} placeholder={placeholder}/>
+                        <Input type={type} name={names[1]} placeholder={placeholder} />
                     </section>
                     <footer>
                         <Button 

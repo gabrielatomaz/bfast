@@ -4,7 +4,7 @@ import { Index, Items, Login, Registration, Profile } from './views/index'
 
 const Routes = () => (
     <Switch>
-    <Route exact path="/" component={Index} />
+    <Route exact path="/bfast" component={Index} />
     <Route path="/items" component={Items} />
     <Route path="/login" component={Login} />
     <Route path="/profile" component={Profile} />
